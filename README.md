@@ -30,7 +30,12 @@ A researcher registers a hypothesis before running a parameter search. TrailLedg
 
 ## System map
 
-```mermaid
+![Proposed system architecture](assets/architecture.svg)
+
+<details>
+<summary>Editable Mermaid source</summary>
+
+```text
 flowchart TD
   A[Hypothesis and evaluation plan] --> C[Run registry]
   B[Dataset and transform manifests] --> C
@@ -41,6 +46,8 @@ flowchart TD
   C --> F
   G --> H[Reproduction bundle]
 ```
+
+</details>
 
 The arrows describe proposed data or control relationships. Detailed ownership and error paths live in the architecture and pipeline specifications.
 
